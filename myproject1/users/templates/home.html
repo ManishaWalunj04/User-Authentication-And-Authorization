@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django App</title>
+    {% load static %}
+    <script src="{% static 'my_app/script.js' %}"></script>  <!-- Adjust path as needed -->
+</head>
+<body>
+    <h1>Hello, Django!</h1>
+    <form id="friend-request-form">
+        <input type="text" id="receiver-id" placeholder="Enter receiver ID" required>
+        <button type="submit">Send Friend Request</button>
+    </form>
+    <div id="response-message"></div>
+</body>
+</html>
